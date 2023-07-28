@@ -10,7 +10,7 @@ export const Walkers = () => {
         walkerHTML += `<li>${walker.name}</li>`
     }
 
-    walkerHTML += "</ul>"
+    return walkerHTML += "</ul>"
 
 }
 
