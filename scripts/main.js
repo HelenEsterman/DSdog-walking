@@ -30,4 +30,4 @@ const applicationHTML = `
 
 mainContainer.innerHTML = applicationHTML
 
-//list details__cities *took this out of class= in the <sections>
+//list details__cities *took this out of class= attribute in the <sections>
