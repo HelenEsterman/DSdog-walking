@@ -56,6 +56,52 @@ const database = {
         name: "Arv Biddle",
         email: "abiddle9@cafepress.com",
         city: "Pittsburgh"
+    },
+    {
+        id: 14,
+        name: "Amelia Anderson",
+        email: "amelia@andersonfam.com",
+        city: "San Diego"
+    }],
+    cities:[{
+        id: 1,
+        name: "San Diego"
+    },
+    {
+        id: 2,
+        name: "Pittsburgh"
+    },
+    {
+        id: 3,
+        name: "Minneapolis"
+    },
+    {
+        id: 4,
+        name: "Phoenix"
+    },
+    {
+        id: 5,
+        name: "Tuscon"
+    },
+    {
+        id: 6,
+        name: "Denver"
+    },
+    {
+        id: 7,
+        name: "Boise"
+    },
+    {
+        id: 8,
+        name: "Sarasota"
+    },
+    {
+        id: 9,
+        name: "White Plains"
+    },
+    {
+        id: 10,
+        name: "Chicago"
     }],
     pets: [{
         id: 1,
@@ -108,3 +154,6 @@ export const getPets = () => {
     return database.pets.map(pet => ({...pet}))
 }
 
+export const getCities = () => {
+    return structuredClone(database.cities)
+}
